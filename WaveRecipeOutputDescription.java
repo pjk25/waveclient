@@ -117,7 +117,7 @@ public class WaveRecipeOutputDescription implements Parcelable {
     public void writeToParcel(Parcel dest, int flags) {
         dest.writeString(name);
         dest.writeString(units);
-        Log.d(TAG, "writeToParcel => "+channels);
+        // Log.v(TAG, "writeToParcel => "+channels);
         dest.writeTypedList(channels);
     }
     
@@ -136,8 +136,8 @@ public class WaveRecipeOutputDescription implements Parcelable {
         units = in.readString();
 
         channels = new ArrayList<WaveRecipeOutputChannelDescription>();
-        Log.d(TAG, "WaveRecipeOutputChannelDescription(Parcel in) => "+channels);
+        // Log.v(TAG, "WaveRecipeOutputChannelDescription(Parcel in) => "+channels);
         in.readTypedList(channels, WaveRecipeOutputChannelDescription.CREATOR);
-        Log.d(TAG, "WaveRecipeOutputChannelDescription(Parcel in) => "+channels);
+        // Log.v(TAG, "WaveRecipeOutputChannelDescription(Parcel in) => "+channels);
     }
 }

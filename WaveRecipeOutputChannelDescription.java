@@ -72,7 +72,7 @@ public class WaveRecipeOutputChannelDescription implements Parcelable {
     }
     
     public void writeToParcel(Parcel dest, int flags) {
-        Log.d(TAG, "writeToParcel("+dest+", "+flags+")");
+        // Log.v(TAG, "writeToParcel("+dest+", "+flags+")");
         dest.writeString(name);
     }
     
@@ -87,7 +87,7 @@ public class WaveRecipeOutputChannelDescription implements Parcelable {
     };
     
     private WaveRecipeOutputChannelDescription(Parcel in) {
-        Log.d(TAG, "WaveRecipeOutputChannelDescription(Parcel "+in+")");
+        // Log.v(TAG, "WaveRecipeOutputChannelDescription(Parcel "+in+")");
         name = in.readString();
     }
 }
