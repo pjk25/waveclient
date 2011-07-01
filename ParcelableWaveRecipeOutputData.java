@@ -60,10 +60,10 @@ public final class ParcelableWaveRecipeOutputData implements Parcelable {
         return ((Number)values.get(name)).doubleValue();
     }
     
-    protected Map<String, Object> valuesAsMap() {
-        Map<String, Object> map = new HashMap<String, Object>(values.size());
+    public Map<String, Double> valuesAsMap() {
+        Map<String, Double> map = new HashMap<String, Double>(values.size());
         for (String key : values.keySet()) {
-            map.put(key, values.get(key));
+            map.put(key, (Double)values.get(key));
         }
         return map;
     }
