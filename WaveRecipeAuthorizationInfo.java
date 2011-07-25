@@ -18,7 +18,9 @@ import java.util.HashMap;
 /**
  * WaveRecipeAuthorization
  * 
- * Pacelable version of {@link edu.berkeley.androidwave.waverecipe.WaveRecipeAuthorization}
+ * Limited, Parcelable version of
+ * {@link edu.berkeley.androidwave.waverecipe.WaveRecipeAuthorization}.
+ * The return argument for {@link IWaveServicePublic#retreiveAuthorizationInfo}
  */
 public class WaveRecipeAuthorizationInfo implements Parcelable {
     

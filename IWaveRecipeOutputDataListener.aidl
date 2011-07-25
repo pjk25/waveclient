@@ -10,6 +10,11 @@ package edu.berkeley.androidwave.waveclient;
 
 import edu.berkeley.androidwave.waveclient.ParcelableWaveRecipeOutputData;
 
+/**
+ * IWaveRecipeOutputDataListener
+ * 
+ * An AIDL interface used by client applications for receiving recipe data
+ */
 oneway interface IWaveRecipeOutputDataListener {
     
     /**

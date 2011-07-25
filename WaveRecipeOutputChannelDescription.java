@@ -12,6 +12,11 @@ import android.os.Parcel;
 import android.os.Parcelable;
 import android.util.Log;
 
+/**
+ * WaveRecipeOutputChannelDescription
+ * 
+ * @see WaveRecipeOutputDescription
+ */
 public class WaveRecipeOutputChannelDescription implements Parcelable {
     
     private static final String TAG = "WaveRecipeOutputChannelDescription";
